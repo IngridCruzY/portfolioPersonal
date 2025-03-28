@@ -393,3 +393,133 @@ i {
     max-width: 90px;
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
+
+.about-me h2 {
+    color: var(--text-color);
+}
+
+.about-me p {
+    margin-top: 10px;
+    color: var(--text-color);
+}
+
+.about-info .about-me-btn {
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background: #8749f2;
+    color: #fff;
+    margin-top: 20px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+/*-----skill----*/
+.skill {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    background: transparent;
+    box-shadow: 1px 8px 10px 2px var(--first-shadow);
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+
+.skill .skill-box {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.skill-box .title {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.skill-box .skill-bar {
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(0,0,0,0.1);
+}
+
+.skill-box .skill-per {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background: #8749f2;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+
+.skill-per.java {
+    animation-delay: 0.1s;
+    width: 70%;
+}
+
+.skill-per.javascript {
+    animation-delay: 0.1s;
+    width: 55%;
+}
+
+.skill-per.sql {
+    animation-delay: 0.1s;
+    width: 60%;
+}
+
+.skill-per.springboot {
+    animation-delay: 0.1s;
+    width: 60%;
+}
+
+.skill-per.html {
+    animation-delay: 0.1s;
+    width: 50%;
+}
+
+.skill-per.css {
+    animation-delay: 0.1s;
+    width: 50%;
+}
+
+.skill-per.git {
+    animation-delay: 0.1s;
+    width: 50%;
+}
+
+.skill-per.postman {
+    animation-delay: 0.1s;
+    width: 60%;
+}
+
+@keyframes progress {
+    0% {
+        width: 0;
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.skill-per .tooltip {
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 9px;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 20px;
+    background: #8749f2;
+    z-index: 1;
+}
+
+
