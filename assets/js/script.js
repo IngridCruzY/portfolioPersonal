@@ -94,3 +94,12 @@ function openWhatsApp() {
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, "_blank");
 }
+
+function downloadCV() {
+    const cvUrl = "assets/cv/CV-INGRID CRUZ.pdf";
+    const link = document.createElement("a");
+    link.href = cvUrl;
+    link.download = "Ingrid-CV.pdf"; 
+    link.click();
+}
+
