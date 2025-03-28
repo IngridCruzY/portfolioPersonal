@@ -87,3 +87,10 @@ function scrollActive() {
 }
 
 window.addEventListener("scroll", scrollActive);
+
+function openWhatsApp() {
+    const phoneNumber = "51938914459";
+    const message = encodeURIComponent("¡Hola Ingrid! Me gustaría contactarte.");
+    const url = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(url, "_blank");
+}
